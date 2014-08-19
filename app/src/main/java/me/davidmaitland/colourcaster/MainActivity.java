@@ -2,6 +2,7 @@ package me.davidmaitland.colourcaster;
 
 import android.app.Activity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 
@@ -51,7 +52,8 @@ public class MainActivity extends Activity {
         list.add(instance2);
 
         for (Caster i: list) {
-            System.out.println(i);
+            String name = i.getName();
+            Log.e("TESTING", name);
         }
     }
 }
